@@ -1,6 +1,7 @@
 
 ## 🚀 快速开始
 无需复杂配置，5分钟跑通完整CRUD+审计+分页+逻辑删除示例，先跑起来再说！
+> ⚠️ 环境要求：JDK 21+（必须）、Maven 3.9+
 
 ### 1. （可选）从源码构建（本地调试用）
 如果需要本地调试框架源码，执行以下命令安装到本地仓库：
@@ -23,7 +24,7 @@ git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
 👉 [simple-dao-demo/v1/demo01_basic_crud](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo01_basic_crud)
 
 ### 3. 运行案例
-1. 用 IDEA 打开 `simple-dao-demo` 项目（或仅打开 demo01_basic_crud 模块）
+1. 用 IDEA 打开 `simple-dao-demo` 项目的demo01_basic_crud 模块
 2. 直接运行 `DemoApplication` 启动类
 3. 控制台自动输出完整执行日志，包含：
    - 自动生成的 SQL 语句
@@ -34,4 +35,5 @@ git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
 - 案例内置 **H2 内存数据库**，无需手动配置数据库、建表
 - 运行后无需任何操作，控制台可直接看到完整执行流程
 - 所有核心功能（ID 自动生成、审计字段填充、逻辑删除）已默认开启
+
 
