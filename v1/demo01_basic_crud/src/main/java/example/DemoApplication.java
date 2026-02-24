@@ -56,6 +56,7 @@ public class DemoApplication {
 			// 6. 再次查询所有记录（包括逻辑删除的）
 			log.info("删除后查询所有记录（不自动过滤 dr）：");
 			userDao.list(new UserCond()).forEach(item -> log.info("{}", item));
+			log.info("=== 让你每天早下班1小时! ===");
 		};
 	}
 }
