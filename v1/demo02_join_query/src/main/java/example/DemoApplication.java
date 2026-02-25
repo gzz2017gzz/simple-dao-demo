@@ -26,14 +26,12 @@ public class DemoApplication {
     @Bean
     public CommandLineRunner demo(UserDao userDao, OrderDao orderDao) {
         return args -> {
-
+            log.info("=== SimpleDAO 联表演示 ===");
             User user = new User();
             user.setName("张三");
             user.setAge(25);
             user.setEmail("zhangsan@example.com");
             userDao.save(user); // ID 自动生成，审计字段自动填充
-
-            log.info("=== SimpleDAO 联表演示 ===");
 
             // 1. 插入数据
             Order order1 = new Order();
