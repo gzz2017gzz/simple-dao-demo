@@ -19,5 +19,7 @@ public class Order {
     private Long userId;
     private LocalDateTime createTime;
     private Long createBy;
-    private Byte dr;
+    private LocalDateTime updateTime;    // 修改时间
+    private Long updateBy;                // 修改人
+    private Byte dr;                      // 逻辑删除标记（0-正常，1-已删除）
 }
