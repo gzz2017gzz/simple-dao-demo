@@ -13,8 +13,9 @@ import example.demo.UserDao;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * ★★注意JDK21+★★
- * SimpleDAO第01集
+ * ★★推荐OpenJdk21+(LTS)★★
+ * 
+ * @第01集 SimpleDAO单表CURD,分页,条件
  */
 @Slf4j
 @SpringBootApplication

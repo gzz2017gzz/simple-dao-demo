@@ -13,8 +13,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * ★★注意JDK21+★★
- * SimpleDAO第04集
+ * ★★推荐OpenJdk21+(LTS)★★
+ * 
+ * @第04集 SimpleDAO联表、条件高阶
  */
 @Slf4j
 @SpringBootApplication

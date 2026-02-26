@@ -3,8 +3,6 @@ package example.goods;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.math.BigDecimal;
-
 @Setter
 @Getter
 public class GoodsVo extends Goods {

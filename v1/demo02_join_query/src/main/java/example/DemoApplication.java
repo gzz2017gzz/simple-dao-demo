@@ -16,40 +16,41 @@ import example.user.UserDao;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * ★★注意JDK21+★★
- * SimpleDAO第02集
+ * ★★推荐OpenJdk21+(LTS)★★
+ * 
+ * @第02集 SimpleDAO联表、条件应用
  */
 @Slf4j
 @SpringBootApplication
 public class DemoApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
 
-    @Bean
-    public CommandLineRunner demo(UserDao userDao, OrderDao orderDao) {
-        return args -> {
-            log.info("=== SimpleDAO 联表演示 ===");
-            User user = new User();
-            user.setName("张三");
-            user.setAge(25);
-            user.setEmail("zhangsan@example.com");
-            userDao.save(user); // ID 自动生成，审计字段自动填充
+	@Bean
+	public CommandLineRunner demo(UserDao userDao, OrderDao orderDao) {
+		return args -> {
+			log.info("=== SimpleDAO 联表演示 ===");
+			User user = new User();
+			user.setName("张三");
+			user.setAge(25);
+			user.setEmail("zhangsan@example.com");
+			userDao.save(user); // ID 自动生成，审计字段自动填充
 
-            // 1. 插入数据
-            Order order1 = new Order();
-            order1.setOrderNo("ORDER20260225");
-            order1.setUserId(user.getId()); // 关联第一集插入的用户
-            orderDao.save(order1);
+			// 1. 插入数据
+			Order order1 = new Order();
+			order1.setOrderNo("ORDER20260225");
+			order1.setUserId(user.getId()); // 关联第一集插入的用户
+			orderDao.save(order1);
 
-            log.info("=== 开始联表演示 ===");
-            // 2. 联表分页查询
-            OrderCond cond = OrderCond.builder().name("张").orderNo("ORDER20260225").build();
-            Page<OrderVO> page = orderDao.pageJoin(cond);
-            log.info("联表分页总数: {}", page.getRowCount());
-            page.getDataList().forEach(vo -> log.info("联表结果: {}", vo));
+			log.info("=== 开始联表演示 ===");
+			// 2. 联表分页查询
+			OrderCond cond = OrderCond.builder().name("张").orderNo("ORDER20260225").build();
+			Page<OrderVO> page = orderDao.pageJoin(cond);
+			log.info("联表分页总数: {}", page.getRowCount());
+			page.getDataList().forEach(vo -> log.info("联表结果: {}", vo));
 
-        };
-    }
+		};
+	}
 }
