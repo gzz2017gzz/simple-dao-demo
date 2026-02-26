@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * SimpleDAO 第05集 报表场景演示
- * 核心：单条件类按需传值、无AS全下划线SQL、固定分组、无分页
+ * 核心：单条件类按需传值、全下划线SQL、固定分组、无分页
  * 推荐OpenJdk21+(LTS)
  */
 @Slf4j
