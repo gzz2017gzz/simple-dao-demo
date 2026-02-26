@@ -1,0 +1,20 @@
+package example.report;
+
+import lombok.Getter;
+import lombok.Setter;
+import java.math.BigDecimal;
+
+/**
+ * 按商品分组报表VO
+ */
+@Getter
+@Setter
+public class ReportGoodsVo {
+    // 商品表字段：t.goods_name
+    private String goodsName;
+    // 聚合字段：order_count/goods_count/total_amount/avg_price
+    private Integer orderCount;
+    private Integer goodsCount;
+    private BigDecimal totalAmount;
+    private BigDecimal avgPrice;
+}
