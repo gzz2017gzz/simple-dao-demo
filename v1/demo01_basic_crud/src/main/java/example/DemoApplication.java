@@ -12,6 +12,10 @@ import example.demo.UserCond;
 import example.demo.UserDao;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * ★★注意JDK21+★★
+ * SimpleDAO第01集
+ */
 @Slf4j
 @SpringBootApplication
 public class DemoApplication {

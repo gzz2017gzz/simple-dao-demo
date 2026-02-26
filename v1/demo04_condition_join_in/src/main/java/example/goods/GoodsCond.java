@@ -55,6 +55,5 @@ public class GoodsCond extends BaseCondition {
         // 场景6：常规业务俩侧值随意空值(推荐SimpleDAO核心用法)
         add("AND o.create_time >= ?", createBetweenStart);
         add("AND o.create_time <= ?", createBetweenEnd);
-
     }
 }

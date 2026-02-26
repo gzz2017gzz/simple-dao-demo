@@ -13,8 +13,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * SimpleDAO第四集 核心演示主类
- * Spring生态注入 + SLF4J日志 + 无硬编码getBean
+ * ★★注意JDK21+★★
+ * SimpleDAO第04集
  */
 @Slf4j
 @SpringBootApplication

@@ -14,6 +14,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.List;
 
+/**
+ * ★★注意JDK21+★★
+ * SimpleDAO第01集
+ */
 @Slf4j
 @SpringBootApplication
 public class DemoApplication {
