@@ -35,17 +35,17 @@ public class DemoApplication implements CommandLineRunner {
         ValidCond validCond = ValidCond.builder().userName("张").build();
 
         // ================= 场景1：3个条件全组合（最典型场景） =================
-        log.info("\n【场景1】3条件全组合：时间范围+商品筛选+用户筛选");
+        log.info("【场景1】3条件全组合：时间范围+商品筛选+用户筛选");
         reportDao.reportGoodsByMerge(timeCond, bizCond, validCond).forEach(vo ->
                 log.info("商品：{} | 订单数：{} | 销售额：{} | 平均价格：{}", vo.getGoodsName(), vo.getOrderCount(), vo.getTotalAmount(), vo.getAvgPrice()));
 
         // ================= 场景2：缺时间条件（仅业务+用户筛选） =================
-        log.info("\n【场景2】缺时间条件：商品筛选+用户筛选");
+        log.info("【场景2】缺时间条件：商品筛选+用户筛选");
         reportDao.reportGoodsByMerge(new TimeCond(), bizCond, validCond).forEach(vo ->
                 log.info("商品：{} | 销售额：{}", vo.getGoodsName(), vo.getTotalAmount()));
 
         // ================= 场景3：单条件对比（兼容第5集用法） =================
-        log.info("\n【场景3】单条件查询（兼容第5集）：仅商品筛选");
+        log.info("【场景3】单条件查询（兼容第5集）：仅商品筛选");
         reportDao.reportGoods(bizCond).forEach(vo ->
                 log.info("商品：{} | 销售额：{}", vo.getGoodsName(), vo.getTotalAmount()));
 
