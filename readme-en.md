@@ -1,49 +1,50 @@
-> 🏠 返回主页：[SimpleDAO 核心特性 & 设计理念](https://gitee.com/gao_zhenzhong/simple-dao/blob/master/readme.md)
 
-## 🚀 快速开始
-无需复杂配置，5分钟跑通完整CRUD+审计+分页+逻辑删除示例，先跑起来再说！
-> ⚠️ 环境要求：JDK 21+（必须）、Maven 3.9+
 
-### 1. 从源码构建
-如果需要本地调试框架源码，执行以下命令安装到本地仓库：
+```markdown
+> 🏠 Back to Home: [SimpleDAO Core Features & Design Philosophy](https://gitee.com/gao_zhenzhong/simple-dao/blob/master/readme-en.md)
+
+## 🚀 Quick Start
+No complex configuration required - run a complete CRUD + Audit + Pagination + Logical Delete example in 5 minutes. Just get it up and running first!
+> ⚠️ Environment Requirements: JDK 21+ (Mandatory), Maven 3.9+
+
+### 1. Build from Source Code
+If you need to debug the framework source code locally, execute the following command to install it to your local repository:
 ```bash
-# 克隆框架源码
+# Clone the framework source code
 git clone https://gitee.com/gao_zhenzhong/simple-dao.git
 cd simple-dao
-# Maven 打包安装（Windows/Linux/Mac 通用）
+# Maven package and install (Works for Windows/Linux/Mac)
 mvn clean install -DskipTests
 ```
-> 也可直接用 IDEA 打开项目，右键 `Maven > Lifecycle > install` 执行
+> Alternatively, open the project directly with IDEA, then right-click `Maven > Lifecycle > install` to execute.
 
-### 2. 快速运行案例（推荐）
-直接下载可运行案例，开箱即用，无需构建源码：
+### 2. Run the Demo Quickly (Recommended)
+Download the runnable demo directly - out-of-the-box, no need to build source code:
 ```bash
-# 克隆案例仓库（推荐命令行方式，更快捷）
+# Clone the demo repository (Command line is recommended for faster access)
 git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
 ```
-或直接下载案例包：  
+Or download the demo package directly:  
 👉 [simple-dao-demo/v1/demo01_basic_crud](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo01_basic_crud)
 
-推荐用 git clone 整个案例仓库
+It is recommended to clone the entire demo repository using `git clone`.
 
-### 3. 运行案例
-1. 用 IDEA 打开 `simple-dao-demo` 项目的demo01_basic_crud 模块
-2. 直接运行 `DemoApplication` 启动类
-3. 控制台自动输出完整执行日志，包含：
-   - 自动生成的 SQL 语句
-   - 增删改查+分页+审计字段填充结果
-   - 逻辑删除执行效果
+### 3. Run the Demo
+1. Open the `demo01_basic_crud` module of the `simple-dao-demo` project with IDEA
+2. Run the `DemoApplication` startup class directly
+3. The console will automatically output the complete execution logs, including:
+   - Automatically generated SQL statements
+   - Results of CRUD + Pagination + Audit Field Population
+   - Execution effect of Logical Delete
 
-或者：
+Alternatively:
 ```bash
 cd simple-dao-demo/v1/demo01_basic_crud
 mvn spring-boot:run
 ```
 
-### ✨ 关键说明
-- 案例内置 **H2 内存数据库**，无需手动配置数据库、建表
-- 运行后无需任何操作，控制台可直接看到完整执行流程
-- 所有核心功能（ID 自动生成、审计字段填充、逻辑删除）已默认开启,无需任何配置
-
-
-
+### ✨ Key Notes
+- The demo comes with an embedded **H2 in-memory database** - no need to manually configure a database or create tables
+- No manual operations are required after running; the complete execution process can be directly viewed in the console
+- All core features (Auto ID Generation, Audit Field Population, Logical Delete) are enabled by default with zero configuration
+```
