@@ -1,6 +1,6 @@
 
 
-```markdown
+
 > 🏠 Back to Home: [SimpleDAO Core Features & Design Philosophy](https://gitee.com/gao_zhenzhong/simple-dao/blob/master/readme-en.md)
 
 ## 🚀 Quick Start
