@@ -1,6 +1,3 @@
-以下是完整的「快速开始」章节，包含修正后的场景速查表（竖版），可直接替换你仓库 `readme.md` 中的对应内容：
-
-```markdown
 > 🏠 返回主页：[SimpleDAO 核心特性 & 设计理念](https://gitee.com/gao_zhenzhong/simple-dao/blob/master/readme.md)
 
 ## 🚀 快速开始

@@ -7,6 +7,17 @@
 No complex configuration required. Run a complete CRUD + audit + pagination + soft delete example in 5 minutes. Just run it first!
 > ⚠️ Environment Requirements: JDK 21+ (required), Maven 3.9+
 
+### 🎯 Demo Project Scenario Quick Reference
+
+| No. | Demo Project Name | Scenario | Core Capabilities |
+|:---:|-------------------|----------|-------------------|
+| 01  | demo01_basic_crud | Single-Table CRUD | Full CRUD, Pagination, Soft Delete, Audit Field Population |
+| 02  | demo02_join_query | Join Queries | Native SQL Joins, Custom Query Logic |
+| 03  | demo03_condition_advance | Complex Condition Queries | Nested Subqueries, SQL Fragment Splicing |
+| 04  | demo04_condition_join_in | IN / Range Queries | Automatic Null Checks, Eliminates 'if' Logic |
+| 05  | demo05_report_aggregate | Report Aggregation | Multi-Table Aggregation, Direct Database Function Calls |
+| 06  | demo06_mergeParams | Multi-Condition Merging | Automatic Merging of Conditions from Multiple Positions, Doubles Report Development Efficiency |
+
 ### 1. Build from Source
 If you need to debug the framework source code locally, run the following commands to install it into your local repository:
 ```bash
