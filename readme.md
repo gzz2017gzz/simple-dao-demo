@@ -22,7 +22,12 @@ mvn clean install -DskipTests
 git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
 ```
 或直接下载案例包：  
-👉 [simple-dao-demo/v1/demo01_basic_crud](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo01_basic_crud)
+👉 [01 SimpleDAO 单表CURD,分页,条件](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo01_basic_crud)
+👉 [02 SimpleDAO 联表、条件应用](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo02_join_query)
+👉 [03 SimpleDAO 联表、条件进阶](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo03_condition_advance)
+👉 [04 SimpleDAO 联表、条件高阶](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo04_condition_join_in)
+👉 [05 SimpleDAO 报表场景](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo05_report_aggregate)
+👉 [06 SimpleDAO mergeParams参数合并](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo06_mergeParams)
 
 推荐用 git clone 整个案例仓库
 
@@ -37,6 +42,11 @@ git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
 或者：
 ```bash
 cd simple-dao-demo/v1/demo01_basic_crud
+cd simple-dao-demo/v1/demo02_join_query
+cd simple-dao-demo/v1/demo03_condition_advance
+cd simple-dao-demo/v1/demo04_condition_join_in
+cd simple-dao-demo/v1/demo05_report_aggregate
+cd simple-dao-demo/v1/demo06_mergeParams
 mvn spring-boot:run
 ```
 
