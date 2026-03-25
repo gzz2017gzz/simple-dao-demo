@@ -17,8 +17,6 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * ★★推荐OpenJdk21+(LTS)★★
- * 
- * @第03集 SimpleDAO联表、条件进阶
  */
 @Slf4j
 @SpringBootApplication

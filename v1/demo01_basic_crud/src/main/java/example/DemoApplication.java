@@ -12,6 +12,9 @@ import example.demo.UserCond;
 import example.demo.UserDao;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * ★★推荐OpenJdk21+(LTS)★★
+ */
 @Slf4j
 @SpringBootApplication
 public class DemoApplication {
