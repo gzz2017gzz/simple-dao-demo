@@ -29,7 +29,7 @@ public class DemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) {
 		log.info("============================================================");
-		log.info("【Java版】【案例-06】mergeParams 多条件合并");
+		log.info("【Java版】【案例-06】mergeParams 多组条件合并");
 		log.info("============================================================");
 		log.info("");
 
