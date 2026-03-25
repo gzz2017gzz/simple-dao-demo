@@ -1,7 +1,12 @@
 package example;
 
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import com.simple.common.base.Page;
-import example.order.Order;
+
 import example.order.OrderDao;
 import example.user.User;
 import example.user.UserCond;
@@ -9,10 +14,6 @@ import example.user.UserDao;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.List;
 
 /**
  * ★★推荐OpenJdk21+(LTS)★★
