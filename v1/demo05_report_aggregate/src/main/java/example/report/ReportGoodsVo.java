@@ -1,14 +1,13 @@
 package example.report;
 
-import lombok.Getter;
-import lombok.Setter;
 import java.math.BigDecimal;
+
+import lombok.Data;
 
 /**
  * 按商品分组报表VO
  */
-@Getter
-@Setter
+@Data
 public class ReportGoodsVo {
     // 商品表字段：t.goods_name
     private String goodsName;
