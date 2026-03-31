@@ -1,10 +1,10 @@
 package example.goods;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-@Setter
-@Getter
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class GoodsVo extends Goods {
     // 用户表字段
     private Long userId;

@@ -1,19 +1,11 @@
 package example;
 
-import java.util.List;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.simple.common.base.Page;
-
-import example.order.OrderDao;
-import example.user.User;
 import example.user.UserCond;
 import example.user.UserDao;
-import jakarta.annotation.PostConstruct;
-import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 /**
  * ★★推荐OpenJdk21+(LTS)★★
@@ -22,27 +14,23 @@ import lombok.extern.slf4j.Slf4j;
 @SpringBootApplication
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
-	@Resource
-	private UserDao userDao;
-	@Resource
-	private OrderDao orderDao;
+    @Bean
+    public String run(UserDao userDao) {
+        log.info("============================================================");
+        log.info("【Java版】【案例-03】条件进阶（IN + 子查询）");
+        log.info("============================================================");
 
-	@PostConstruct
-	public void run() {
-		log.info("============================================================");
-		log.info("【Java版】【案例-03】条件进阶（IN + 子查询）");
-		log.info("============================================================");
-		log.info("");
+        log.info("1. 条件查询（条件： age in (20,25,30)）");
+        log.info("   => 查询结果: ");
+        userDao.page(UserCond.builder().ages(new Integer[]{25, 30, 28}).build()).getDataList().forEach(vo -> log.info("{}", vo));
 
-		log.info("1. 条件查询（条件：name like '%张%', age in (20,25,30), 且有订单）");
-		UserCond cond = UserCond.builder().name("张").ages(new Integer[] { 20, 25, 30 }).subQuery(true).build();
-		Page<User> page = userDao.page(cond);
-		List<User> list = userDao.list(cond);
-		log.info("   => 总记录数: {}", page.getRowCount());
-		log.info("   => 查询结果: {}", list);
-	}
+        log.info("2. 条件查询（条件：age in (20,25,30), 且有订单）");
+        log.info("   => 查询结果: ");
+        userDao.page(UserCond.builder().ages(new Integer[]{25, 30, 28}).orderQuery(true).build()).getDataList().forEach(vo -> log.info("{}", vo));
+        return "";
+    }
 }

@@ -38,7 +38,7 @@ public class GoodsCond extends BaseCondition {
 
         // 场景3：关联表子查询带IN条件
         if (ArrayUtils.isNotEmpty(goodsNames)) {
-            add("AND o.id IN (SELECT order_id FROM t_goods WHERE goods_name IN", goodsNames);
+            add("AND o.id IN (SELECT order_id FROM bus_goods WHERE goods_name IN", goodsNames);
             add("AND dr=0)");
         }
         // 场景4：BETWEEN关键字通常不用,不灵活必须两边都有值(不推荐)

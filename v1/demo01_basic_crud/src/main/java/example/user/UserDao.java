@@ -1,10 +1,13 @@
 package example.user;
 
+import com.simple.common.base.BaseDao;
 import org.springframework.stereotype.Repository;
 
-import com.simple.common.base.BaseDao;
 
+/**
+ * 【用户表】数据访问层
+ **/
 @Repository
 public class UserDao extends BaseDao<User> {
-    // 空类，所有单表 CRUD 自动拥有
+
 }

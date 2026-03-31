@@ -1,9 +1,6 @@
 spring:
   datasource:
-    # 内存模式（默认，用完即弃）
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
-    # 如需持久化，可切换为文件模式
-    # url: jdbc:h2:file:./data/testdb;DB_CLOSE_DELAY=-1
     driver-class-name: org.h2.Driver
     username: sa
     password:

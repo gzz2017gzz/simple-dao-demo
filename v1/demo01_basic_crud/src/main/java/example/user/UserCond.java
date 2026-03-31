@@ -1,15 +1,14 @@
 package example.user;
 
+import java.time.LocalDate;
+
 import com.simple.common.base.BaseCondition;
-import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.time.LocalDate;
-import java.util.Objects;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 【用户表】查询条件
@@ -41,18 +40,18 @@ public class UserCond extends BaseCondition {
         and("remark LIKE", remark, 3);
         and("dr =", dr);
         in("id", ids);
-        /* 新增条件↓ */
-        in("age", ages);
-        add("AND t.id IN (SELECT user_id FROM bus_order WHERE dr=0)", Objects.equals(Boolean.TRUE, orderQuery));
+        /* 新境条件↓ */
+        and("age >=", ageMin);
+        and("age <=", ageMax);
+
     }
 
-    /* 新增条件↓ */
-    @Schema(description = "年龄集合")
-    private Integer[] ages;
+    /* 新境条件↓ */
+    @Schema(description = "年龄上限")
+    private Integer ageMax;
 
-    @Schema(description = "定单子查询")
-    private Boolean orderQuery;
-
+    @Schema(description = "年龄下限")
+    private Integer ageMin;
     /* 默认条件↓ */
     @Schema(description = "用户名")
     private String name;
