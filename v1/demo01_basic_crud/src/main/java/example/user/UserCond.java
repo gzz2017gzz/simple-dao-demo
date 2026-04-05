@@ -40,13 +40,13 @@ public class UserCond extends BaseCondition {
         and("remark LIKE", remark, 3);
         and("dr =", dr);
         in("id", ids);
-        /* 新境条件↓ */
+        /* 新增条件↓ */
         and("age >=", ageMin);
         and("age <=", ageMax);
 
     }
 
-    /* 新境条件↓ */
+    /* 新增条件↓ */
     @Schema(description = "年龄上限")
     private Integer ageMax;
 
