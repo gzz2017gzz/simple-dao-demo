@@ -55,3 +55,4 @@ INSERT INTO bus_order (id, order_no, user_id, order_name, total_amount, pay_amou
 (2, 'ORD2026002', 2, '生活用品订单', 299.00, 299.00, 2, 1, CURRENT_TIMESTAMP, 1, '李四', '13800138002', '上海市浦东新区', '无需包装', CURRENT_TIMESTAMP, 1000, 0),
 (3, 'ORD2026003', 1, '手机配件订单', 399.00, 399.00, 1, 1, CURRENT_TIMESTAMP, 1, '张三', '13800138001', '北京市海淀区', '加急配送', CURRENT_TIMESTAMP, 1000, 0),
 (4, 'ORD2026004', 1, '电脑周边订单', 1299.00, 1299.00, 1, 1, CURRENT_TIMESTAMP, 1, '张三', '13800138001', '北京市海淀区', '正常发货', CURRENT_TIMESTAMP, 1000, 0);
+

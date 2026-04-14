@@ -31,7 +31,7 @@ public class DemoApplication {
 
 		log.info("2. 条件查询（条件：age in (20,25,30), 且有订单）");
 		log.info("   => 查询结果: ");
-		orderDao.pageJoin(OrderCond.builder().inAges(new Integer[] { 25, 30, 28 }).subQuery(true).build()).getDataList().forEach(vo -> log.info("{}", vo));
+		orderDao.pageJoin(OrderCond.builder().inAges(new Integer[] { 30 }).subQuery(true).build()).getDataList().forEach(vo -> log.info("{}", vo));
 		return "";
 	}
 }
