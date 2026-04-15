@@ -8,4 +8,4 @@ spring:
     init:
       schema-locations: classpath:schema.sql
       mode: always
-simple-dao.show-sql: false  # 全局关闭，生产环境推荐	  	  
+simple-dao.show-sql: false  # 全局关闭，生产环境推荐
