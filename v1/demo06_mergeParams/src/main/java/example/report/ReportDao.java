@@ -24,16 +24,5 @@ public class ReportDao extends BaseDao<Goods> {
                 "AND o.user_id IN (SELECT id FROM t_user " + validCond.where() + ") GROUP BY t.goods_name";
         return list(sql, ReportVo.class, mergeParams(timeCond, bizCond, validCond));
     }
-
-
-    // ========== 兼容第5集单条件查询方法==========
-    public List<ReportVo> reportGoods(BizCond bizCond) {
-        String sql =
-                "SELECT t.goods_name,COUNT(o.id) order_count,COUNT(t.id) goods_count,SUM(t.price) total_amount,AVG(t.price) avg_price FROM t_goods t " +
-                        "JOIN t_order o ON t.order_id = o.id " +
-                        "JOIN t_user u ON o.user_id = u.id " +
-                        "WHERE t.dr=0 AND o.dr=0 AND u.dr=0 " + bizCond.and() +
-                        "GROUP BY t.goods_name";
-        return list(sql, ReportVo.class, bizCond.array());
-    }
+ 
 }

@@ -46,11 +46,6 @@ public class DemoApplication {
         // 场景2：缺时间条件（仅业务+用户筛选）
         log.info("2. 缺时间条件（商品名含'手' + 价格 ≥ 1000 + 用户名含'张'）");
         reportDao.reportGoodsByMerge(new TimeCond(), bizCond, validCond).forEach(vo -> log.info("   => 结果: {}", vo));
-
-        // 场景3：单条件（仅商品筛选）
-        log.info("3. 单条件查询（商品名含'手' + 价格 ≥ 1000）");
-        reportDao.reportGoods(bizCond).forEach(vo -> log.info("   => 结果: {}", vo));
-
         return "";
     }
 }
