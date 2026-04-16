@@ -15,7 +15,6 @@ public class NoticeDao extends BaseDao<Notice> {
             FROM sys_notice t
             LEFT JOIN sys_user u ON t.receiver = u.id
             """;
-
 	@DataAuth(userField = "t.receiver")
 	public Page<NoticeVO> pageJoin(NoticeCond cond) {
 		return page(SQL, cond, NoticeVO.class);

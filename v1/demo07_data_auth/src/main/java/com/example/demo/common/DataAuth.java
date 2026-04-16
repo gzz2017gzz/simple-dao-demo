@@ -8,5 +8,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface DataAuth {
-	String userField() default "u.user_id"; // 个人权限字段名
+	String userField() default "u.id"; // 个人权限字段名
 }

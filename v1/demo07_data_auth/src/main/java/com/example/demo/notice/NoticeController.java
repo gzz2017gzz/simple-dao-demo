@@ -13,9 +13,8 @@ import com.simple.common.base.Page;
 public class NoticeController {
 	@Autowired
 	private NoticeService noticeService;
-
 	@PostMapping("page")
-	public Page<NoticeVO> list(NoticeCond cond) {
+	public Page<NoticeVO> page(NoticeCond cond) {
 		return noticeService.page(cond);
 	}
 }

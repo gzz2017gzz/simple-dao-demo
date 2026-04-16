@@ -21,7 +21,7 @@ public class DataAuthAspect {
 	public void beforeQuery(JoinPoint point, DataAuth auth) {
 		BaseCondition cond = (BaseCondition) point.getArgs()[0];
 		String userId = request.getHeader(Const.USER_ID);
-		String and = " AND " + auth.userField() + " = " + userId;
+		String and = " AND " + auth.userField() + " IN (" + userId + ",0)";
 		cond.setExtendCondition(and);
 	}
 }
