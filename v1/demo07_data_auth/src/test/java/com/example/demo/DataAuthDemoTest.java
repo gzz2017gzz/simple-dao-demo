@@ -23,17 +23,20 @@ public class DataAuthDemoTest {
 
 	@Test
 	public void test01() throws Exception {
-		log.info("UserId=1001 查询结果:\n" + doRequest("1001"));
+		log.info("============================================================");
+		log.info("【Java版】【案例-07】 数据权限·多租户");
+		log.info("============================================================");
+		log.info("UserId=1001 查询结果:" + doRequest("1001"));
 	}
 
 	@Test
 	public void test02() throws Exception {
-		log.info("UserId=1002 查询结果:\n" + doRequest("1002"));
+		log.info("UserId=1002 查询结果:" + doRequest("1002"));
 	}
 
 	@Test
 	public void test03() throws Exception {
-		log.info("未带Header 查询结果:\n" + doRequest(""));
+		log.info("未带Header 查询结果:" + doRequest(""));
 	}
 
 	private String doRequest(String userId) throws Exception {

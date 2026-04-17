@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>demo08</artifactId>
+    <artifactId>demo08_desensitize</artifactId>
     <version>1.0.0</version>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -16,23 +16,23 @@
         <java.version>21</java.version>
     </properties>
     <dependencies>
-        <!-- Spring Boot Starter JDBC -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
-        <!-- SimpleDAO 核心（假设已本地安装） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.simple</groupId>
             <artifactId>simple-dao</artifactId>
             <version>1.2.0</version>
         </dependency>
-        <!-- H2 内存数据库 -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
         </dependency>
-        <!-- Lombok（简化代码） -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

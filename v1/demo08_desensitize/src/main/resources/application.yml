@@ -8,4 +8,7 @@ spring:
     init:
       schema-locations: classpath:schema.sql
       mode: always
-simple-dao.logic-delete.field: is_deleted
+simple-dao:
+  show-sql: true
+  logic-delete:
+    field: is_deleted

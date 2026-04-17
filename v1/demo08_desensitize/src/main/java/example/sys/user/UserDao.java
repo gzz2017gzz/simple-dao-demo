@@ -1,4 +1,4 @@
-package example.user;
+package example.sys.user;
 
 import com.simple.common.base.BaseDao;
 import org.springframework.stereotype.Repository;

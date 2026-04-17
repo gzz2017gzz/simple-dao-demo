@@ -1,4 +1,4 @@
-package example.config;
+package example.common.config;
 
 import com.simple.common.base.UserIdProvider;
 import org.springframework.stereotype.Component;
