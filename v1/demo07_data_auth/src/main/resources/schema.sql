@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS sys_notice (
 -- 测试数据
 INSERT INTO sys_user (id, name, posts) VALUES (1001, '张三', 'repairer');
 INSERT INTO sys_user (id, name, posts) VALUES (1002, '李四', 'manager');
+INSERT INTO sys_user (id, name, posts) VALUES (0, '系统', 'system');
 
 INSERT INTO sys_notice (id, title, content, receiver) VALUES (1, '维修通知', '明天检修', 1001);
 INSERT INTO sys_notice (id, title, content, receiver) VALUES (2, '管理通知', '季度会议', 1002);

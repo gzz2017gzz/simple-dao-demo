@@ -11,10 +11,12 @@ import com.simple.common.base.Page;
 @RestController
 @RequestMapping("notice")
 public class NoticeController {
+	
 	@Autowired
 	private NoticeService noticeService;
 	@PostMapping("page")
 	public Page<NoticeVO> page(NoticeCond cond) {
 		return noticeService.page(cond);
 	}
+	
 }
