@@ -21,9 +21,9 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
-        <!-- SimpleDAO 核心（假设已本地安装） -->
+        <!-- SimpleDAO 核心 -->
         <dependency>
-            <groupId>com.simple</groupId>
+     		<groupId>io.gitee.simpledao</groupId>
             <artifactId>simple-dao</artifactId>
             <version>1.2.0</version>
         </dependency>
@@ -37,6 +37,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+		<dependency>
+		    <groupId>io.swagger.core.v3</groupId>
+		    <artifactId>swagger-core-jakarta</artifactId>
+		    <version>2.2.48</version>
+		</dependency>
     </dependencies>
     <build>
         <plugins>

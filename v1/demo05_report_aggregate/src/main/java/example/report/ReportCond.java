@@ -43,5 +43,7 @@ public class ReportCond extends BaseCondition {
         // 价格区间：传值则拼接，不传忽略
         add("AND t.price >= ?", priceMin);
         add("AND t.price <= ?", priceMax);
+        add("AND t.price <= ?", priceMax);
+
     }
 }
