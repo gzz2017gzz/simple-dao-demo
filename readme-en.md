@@ -17,6 +17,16 @@
 | 06  | demo06_mergeParams | Multi-condition merging | Automatic merging of conditions from multiple sources |
 | 07  | demo07_data_auth | Data permissions | Transparent, controllable, and extensible data permission system |
 | 08  | demo08_desensitize | Field desensitization | Logical deletion field customization, audit field customization, field masking |
+### 📦 Add Dependency
+Add the following to your `pom.xml`:
+```xml
+<dependency>
+    <groupId>io.gitee.simpledao</groupId>
+    <artifactId>simple-dao</artifactId>
+    <version>1.2.0</version>
+</dependency>
+```
+
 
 ### 1. Download the Code
 ```bash

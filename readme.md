@@ -16,6 +16,15 @@
 | 07  | demo07_data_auth | 数据权限 | 完全透明、高度可控、易于扩展的数据权限体系|
 | 08  | demo08_desensitize | 字段脱敏 | 逻辑删除字段名配置、审计字段自定义、字段脱敏 |
 
+### 引入依赖
+在你自己的项目 `pom.xml` 中添加：
+```xml
+<dependency>
+    <groupId>io.gitee.simpledao</groupId>
+    <artifactId>simple-dao</artifactId>
+    <version>1.2.0</version>
+</dependency>
+```
 ### 1. 下载代码
 ```bash
 git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
