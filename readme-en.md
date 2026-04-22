@@ -1,76 +1,43 @@
 
-
 > 🏠 Back to Home: [SimpleDAO Core Features & Design Philosophy](https://gitee.com/gao_zhenzhong/simple-dao/blob/master/readme-en.md)
 
 
 ## 🚀 Quick Start
-No complex configuration required. Run a complete CRUD + audit + pagination + soft delete example in 5 minutes. Just run it first!
-> ⚠️ Environment Requirements: JDK 21+ (required), Maven 3.9+
 
-### 🎯 Demo Project Scenario Quick Reference
+> ⚠️ Requirements: JDK 21+ (mandatory), Maven 3.9+
 
-| No. | Demo Project Name | Scenario | Core Capabilities |
-|:---:|-------------------|----------|-------------------|
-| 01  | demo01_basic_crud | Single-Table CRUD | Full CRUD, Pagination, Soft Delete, Audit Field Population |
-| 02  | demo02_join_query | Join Queries | Native SQL Joins, Custom Query Logic |
-| 03  | demo03_condition_advance | Complex Condition Queries | Nested Subqueries, SQL Fragment Splicing |
-| 04  | demo04_condition_join_in | IN / Range Queries | Automatic Null Checks, Eliminates 'if' Logic |
-| 05  | demo05_report_aggregate | Report Aggregation | Multi-Table Aggregation, Direct Database Function Calls |
-| 06  | demo06_mergeParams | Multi-Condition Merging | Automatic Merging of Conditions from Multiple Positions, Doubles Report Development Efficiency |
+### 🎯 Demo Project Overview
+| No. | Module Name | Scenario | Key Capabilities |
+|:---:|-------------|----------|------------------|
+| 01  | demo01_basic_crud | Single-table CRUD | Full CRUD, pagination, logical deletion, audit field population |
+| 02  | demo02_join_query | Join queries | Native SQL joins, custom query logic |
+| 03  | demo03_condition_advance | Complex conditions | Nested subqueries, SQL fragment composition |
+| 04  | demo04_condition_join_in | IN / range queries | Automatic null-check, eliminating if-else logic |
+| 05  | demo05_report_aggregate | Report aggregation | Multi-table summaries, direct database function calls |
+| 06  | demo06_mergeParams | Multi-condition merging | Automatic merging of conditions from multiple sources |
+| 07  | demo07_data_auth | Data permissions | Transparent, controllable, and extensible data permission system |
+| 08  | demo08_desensitize | Field desensitization | Logical deletion field customization, audit field customization, field masking |
 
-### 1. Build from Source
-If you need to debug the framework source code locally, run the following commands to install it into your local repository:
+### 1. Download the Code
 ```bash
-# Clone the framework source
-git clone https://gitee.com/gao_zhenzhong/simple-dao.git
-cd simple-dao
-# Maven package and install (Windows/Linux/Mac)
-mvn clean install -DskipTests
-```
-> Alternatively, open the project with IDEA, right-click `Maven > Lifecycle > install` to execute.
-
-### 2. Run Examples Quickly (Recommended)
-Directly download runnable examples – ready to use out of the box, no need to build the source:
-```bash
-# Clone the example repository (command line is faster)
 git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
 ```
-Or download the example packages directly:  
-👉 [01 SimpleDAO Single-table CRUD, Pagination, Conditions](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo01_basic_crud)
 
-👉 [02 SimpleDAO Join Queries, Condition Application](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo02_join_query)
-
-👉 [03 SimpleDAO Join Queries, Advanced Conditions](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo03_condition_advance)
-
-👉 [04 SimpleDAO Join Queries, Higher-Order Conditions](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo04_condition_join_in)
-
-👉 [05 SimpleDAO Reporting Scenarios](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo05_report_aggregate)
-
-👉 [06 SimpleDAO mergeParams Parameter Merging](https://gitee.com/gao_zhenzhong/simple-dao-demo/tree/master/v1/demo06_mergeParams)
-
-It is recommended to git clone the entire example repository.
-
-### 3. Run Examples
-1. Open the `simple-dao-demo` project's `demo01_basic_crud` module with IDEA.
+### 2. Run the Examples
+1. Open the `simple-dao-demo` project in IntelliJ IDEA and navigate to the `demo01_basic_crud` module.
 2. Run the `DemoApplication` main class directly.
 3. The console will automatically output complete execution logs, including:
-   - Automatically generated SQL statements
+   - Auto-generated SQL statements
    - CRUD + pagination + audit field population results
-   - Soft delete execution effects
+   - Logical deletion effects
 
-Or:
+Alternatively, using the command line:
 ```bash
 cd simple-dao-demo/v1/demo01_basic_crud
 mvn spring-boot:run
-# Similarly for other demos
-cd ../demo02_join_query && mvn spring-boot:run
-cd ../demo03_condition_advance && mvn spring-boot:run
-cd ../demo04_condition_join_in && mvn spring-boot:run
-cd ../demo05_report_aggregate && mvn spring-boot:run
-cd ../demo06_mergeParams && mvn spring-boot:run
 ```
 
-### ✨ Key Notes
-- The examples include an embedded **H2 in-memory database** – no need to manually configure the database or create tables.
-- After running, no additional actions are required; you can directly see the complete execution flow in the console.
-- All core features (automatic ID generation, audit field population, soft delete) are enabled by default – no configuration needed.
+### ✨ Important Notes
+- The examples come with an embedded **H2 in-memory database**—no manual database setup or table creation required.
+- Simply run the application and observe the complete execution flow in the console.
+- All core features (auto ID generation, audit field population, logical deletion) are enabled by default with zero configuration.
