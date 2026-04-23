@@ -31,7 +31,7 @@
         <dependency>
      		<groupId>io.gitee.simpledao</groupId>
             <artifactId>simple-dao</artifactId>
-            <version>1.2.0</version>
+            <version>1.2.1</version>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
