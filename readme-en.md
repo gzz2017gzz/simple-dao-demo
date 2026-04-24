@@ -6,6 +6,16 @@
 
 > ⚠️ Requirements: JDK 21+ (mandatory), Maven 3.9+
 
+### Compatible Versions
+The following versions have been tested and are recommended:
+
+| Dependency     | Recommended Version |
+|----------------|---------------------|
+| Spring Boot    | 3.x                 |
+| Swagger Core   | 2.x                 |
+
+> Other versions may be compatible but are not guaranteed.
+
 ### 🎯 Demo Project Overview
 | No. | Module Name | Scenario | Key Capabilities |
 |:---:|-------------|----------|------------------|
