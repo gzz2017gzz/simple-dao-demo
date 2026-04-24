@@ -36,7 +36,7 @@ Add the following to your `pom.xml`:
     <version>1.2.0</version>
 </dependency>
 ```
-
+This dependency is published to Maven Central, so it can be fetched directly from any standard Maven mirror worldwide without requiring a private repository.
 
 ### 1. Download the Code
 ```bash

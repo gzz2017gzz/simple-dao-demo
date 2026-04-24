@@ -34,6 +34,8 @@
     <version>1.2.0</version>
 </dependency>
 ```
+该依赖已发布至 Maven Central，国内用户也可通过阿里云等镜像快速拉取，无需额外配置私服。
+
 ### 1. 下载代码
 ```bash
 git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
