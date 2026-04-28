@@ -1,5 +1,5 @@
 
-> 🏠 Back to Home: [SimpleDAO Core Features & Design Philosophy](https://gitee.com/gao_zhenzhong/simple-dao/blob/master/readme-en.md)
+> 🏠 Back to Home: [SimpleDAO Core Features & Design Philosophy](https://github.com/gzz2017gzz/simple-dao-demo/blob/master/readme-en.md)
 
 
 ## 🚀 Quick Start
@@ -33,14 +33,14 @@ Add the following to your `pom.xml`:
 <dependency>
     <groupId>io.gitee.simpledao</groupId>
     <artifactId>simple-dao</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 This dependency is published to Maven Central, so it can be fetched directly from any standard Maven mirror worldwide without requiring a private repository.
 
 ### 1. Download the Code
 ```bash
-git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
+git clone https://github.com/gzz2017gzz/simple-dao-demo.git
 ```
 
 ### 2. Run the Examples

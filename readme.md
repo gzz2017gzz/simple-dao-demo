@@ -1,4 +1,4 @@
-> 🏠 返回主页：[SimpleDAO 核心特性 & 设计理念](https://gitee.com/gao_zhenzhong/simple-dao/blob/master/readme.md)
+> 🏠 返回主页：[SimpleDAO 核心特性 & 设计理念](https://github.com/gzz2017gzz/simple-dao/blob/master/readme.md)
 
 ## 🚀 快速开始
 
@@ -31,14 +31,14 @@
 <dependency>
     <groupId>io.gitee.simpledao</groupId>
     <artifactId>simple-dao</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 该依赖已发布至 Maven Central，国内用户也可通过阿里云等镜像快速拉取，无需额外配置私服。
 
 ### 1. 下载代码
 ```bash
-git clone https://gitee.com/gao_zhenzhong/simple-dao-demo.git
+git clone https://github.com/gzz2017gzz/simple-dao-demo.git
 ```
  
 
