@@ -1,4 +1,4 @@
-> 🏠 返回主页：[SimpleDAO 核心特性 & 设计理念](https://github.com/gzz2017gzz/simple-dao/blob/master/readme.md)
+> 🏠 返回主页：[SimpleDAO 核心特性 & 设计理念](https://github.com/gzz2017gzz/simple-dao/blob/master/readme%20-%20cn.md)
 
 ## 🚀 快速开始
 
