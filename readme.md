@@ -1,5 +1,5 @@
 
-> 🏠 Back to Home: [SimpleDAO Core Features & Design Philosophy](https://github.com/gzz2017gzz/simple-dao-demo/blob/master/readme-en.md)
+> 🏠 Back to Home: [SimpleDAO Core Features & Design Philosophy](https://github.com/gzz2017gzz/simple-dao-demo)
 
 
 ## 🚀 Quick Start
