@@ -10,7 +10,7 @@
 |----------------|---------------------|-------------------------|
 | JDK            | 21+                 | Required                |
 | Maven          | 3.9+                | Required                |
-| Spring Boot    | 3.x                 | Recommended (tested)    |
+| Spring Boot    | 3.x/4.x             | Recommended (tested)    |
 | Swagger Core   | 2.x                 | Recommended (tested)    |
 
 > Other versions may be compatible but are not guaranteed.
