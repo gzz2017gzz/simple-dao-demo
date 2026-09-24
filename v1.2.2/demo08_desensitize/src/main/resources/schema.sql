@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS sys_user (
+    id BIGINT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    age INTEGER,
+    id_card VARCHAR(30) UNIQUE NOT NULL,
+    phone VARCHAR(20) UNIQUE,
+    create_time TIMESTAMP,
+    create_by BIGINT,
+    update_time TIMESTAMP,
+    update_by BIGINT,
+    is_deleted TINYINT DEFAULT 0         -- 逻辑删除 0未删 1已删
+);
+
+INSERT INTO sys_user (id, name, age, id_card, phone, create_time, create_by, update_time, update_by, is_deleted) VALUES
+(3681877765507776511, '张三', 25, '110101199001011234', '13812345678', CURRENT_TIMESTAMP, 1000, NULL, NULL, 0),
+(3681877765507776512, '李四', 30, '110101199502021235', '13987654321', CURRENT_TIMESTAMP, 1000, NULL, NULL, 0),
+(3681877765507776513, '王五', 28, '110101199703031236', '13611223344', CURRENT_TIMESTAMP, 1000, NULL, NULL, 0);

@@ -27,6 +27,7 @@
 | 06  | demo06_mergeParams | Multi-condition merging | Automatic merging of conditions from multiple sources |
 | 07  | demo07_data_auth | Data permissions | Transparent, controllable, and extensible data permission system |
 | 08  | demo08_desensitize | Field desensitization | Logical deletion field customization, audit field customization, field masking |
+| 09  | demo09_dynamic_datasource | Dynamic datasource | Runtime datasource switching, AOP annotation-driven, zero business intrusion |
 ### 📦 Add Dependency
 Add the following to your `pom.xml`:
 ```xml

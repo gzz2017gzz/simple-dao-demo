@@ -1,0 +1,18 @@
+# 编译输出
+/target/
+/logs/
+
+# IDE 自动生成的配置（全删干净）
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse 相关
+/.settings/
+/.classpath
+/.project
+
+# 其他自动生成目录
+/.apt_generated/
+/.apt_generated_tests/
