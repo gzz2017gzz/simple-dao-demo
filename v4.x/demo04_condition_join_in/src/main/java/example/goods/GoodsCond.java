@@ -7,10 +7,11 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.commons.lang3.ArrayUtils;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
+
+import org.springframework.util.ObjectUtils;
 
 @Setter
 @Getter
@@ -37,7 +38,7 @@ public class GoodsCond extends BaseCondition {
         add("AND o.order_no LIKE ?", orderNo, 3);
 
         // 场景3：关联表子查询带IN条件
-        if (ArrayUtils.isNotEmpty(goodsNames)) {
+		if (ObjectUtils.isEmpty(goodsNames)) {
             add("AND o.id IN (SELECT order_id FROM bus_goods WHERE goods_name IN", goodsNames);
             add("AND dr=0)");
         }
