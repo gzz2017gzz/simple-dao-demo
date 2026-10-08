@@ -34,7 +34,7 @@ Add the following to your `pom.xml`:
 <dependency>
     <groupId>io.gitee.simpledao</groupId>
     <artifactId>simple-dao</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
 </dependency>
 ```
 This dependency is published to Maven Central, so it can be fetched directly from any standard Maven mirror worldwide without requiring a private repository.
@@ -54,7 +54,7 @@ git clone https://github.com/gzz2017gzz/simple-dao-demo.git
 
 Alternatively, using the command line:
 ```bash
-cd simple-dao-demo/v1/demo01_basic_crud
+cd simple-dao-demo/v3.x/demo01_basic_crud
 mvn spring-boot:run
 ```
 
